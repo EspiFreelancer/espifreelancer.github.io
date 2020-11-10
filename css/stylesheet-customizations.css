@@ -1,0 +1,74 @@
+/* Put your custom CSS here if you want to override the defaults.*/
+/* Here are some common customizations for colors*/
+
+
+/*Customize the menubar color*/
+.ui.menu {
+   background: #037953;
+}
+ .ui.menu a.item {
+   color: white;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+}
+ .ui.menu a.item:hover {
+   color: white;
+   background-color: #036042;
+}
+ .ui.menu a.active.item, .ui.menu a.active.item:hover {
+   color: white;
+   background-color: #036042;
+}
+
+/*"Read More" buttons*/
+ a.ui.bottom.attached.button {
+   color: white;
+   background: #037953;
+}
+ a.ui.bottom.attached.button:hover {
+   background: #036042;
+}
+
+/*Tag pill boxes*/
+ .ui.basic.label {
+   color: white;
+   background: #037953;
+}
+
+/*General links*/
+ a {
+   color: #037953;
+}
+ a:hover {
+   color: #036042;
+}
+
+/*Home page buttons (projects, essays, cv, etc)*/
+ .ui.basic.button, .ui.basic.buttons .button {
+   background: #037953 !important;
+   color: white !important;
+}
+ .ui.basic.button:hover, .ui.basic.buttons .button:hover {
+   background: #036042 !important;
+   color: white !important;
+}
+
+/*Customize the home page icon colors*/
+ .icon-color {
+   color: #037953;
+}
+
+/*Customize the size of the avatar image*/
+ .ui.menu img.avatar {
+    margin-right: 0em;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 500rem;
+}
+
+/*Customize on the menu brand. Space to the left of the name*/
+.brand span {
+   padding-left: .5em;
+}
+

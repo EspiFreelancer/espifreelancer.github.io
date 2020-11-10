@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>
+    EspiFreelancer | Portfolio
+  </title>
+
+  <!-- Load Javascript and CSS for Semantic UI -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/css/semantic-ui/semantic.min.js"></script>
+  <link rel="stylesheet" href="/css/semantic-ui/semantic.min.css">
+
+  <!-- Load Techfolio CSS customizations -->
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-default.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-customizations.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/print-default.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/css/print-customizations.css" media="print">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+</head>
+
+
+  <body>
+    <!-- Used by all builtin themes. Now we list number of essays and projects. -->
+
+
+
+
+
+
+<div class="nonprintable">
+  <nav class="ui stackable menu">
+    <a href="/" class="brand item">
+      <img class="ui avatar image" src="/images/4x4.jpg"><span>Ismael</span>
+    </a>
+    
+    <a href="/projects" class="  active item">Projects</a>
+    
+    
+    <!-- <a href="/essays" class="  item">Essays</a> -->
+    
+    <a href="/resume" class=" item">CV</a>
+  </nav>
+</div>
+
+<div style="margin-top: 20px" class="ui text container">
+ <h1>Django - Simple Web</h1>
+ <p><img class="ui image" src="/images/django_simple_web_1.webp" /></p>
+
+<p>The purpose of this small website is to follow the guidelines of good practices applied to development with Django Framework.</p>
+
+<h3 id="hardware">Site structure</h3>
+<p>The project management files are located in a folder identified as web_project. All the apps are inside the apps folder. All templates are located in a single folder at the root, this has the advantage that the designer does not have to go through the project to find them, but it has the disadvantage that all the files that make up the app are no longer in a single place. Although the app folder and its corresponding template folder share the same name, facilitating their identification.</p>
+
+<div class="ui segment">
+  <pre><code class="bash">
+.
+├── apps
+│   ├── blog_app
+│   ├── contact_app
+│   ├── pages_app
+│   ├── services_app
+│   ├── social_app
+│   └── web_app
+│
+├── media
+├── static
+├── templates
+│   ├── base
+│   ├── blog_app
+│   ├── contact_app
+│   ├── pages_app
+│   ├── services_app
+│   └── web_app
+│
+├── db.sqlite3
+├── requirements.txt
+├── manage.py
+└── web_project
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+    </code></pre>
+</div>
+
+<h3 id="hardware">Descripción de las aplicaciones</h3>
+<p>The website is made up of:</p>
+
+<ul style="margin: 0px;">
+  <li>App that manages static pages</li>
+  <li>App to publish services</li>
+  <li>App to manage the blog</li>
+  <li>An app for generic pages (site policy, cookies)</li>
+  <li>Another for the management of social networks shown</li>
+  <li>And a contact form and its corresponding app</li>
+</ul>
+
+<h3 id="software">implementations</h3>
+<ul style="margin: 0px;">
+  <li>Try to make most of the views class-based</li>
+  <li>To make text editing more user-friendly for the Admin, django-ckeditor was used.</li>
+  <li>Added django-widget-tweaks to be able to edit the appearance of the froms from the templates.</li>
+  <li>A custom context processor was created to integrate the own tag templates.</li>
+</ul>
+<br>
+<p>For more details see the github repository: <a href="https://github.com/EspiFreelancer/Django_simple_website">
+<i class="large github icon "></i>Django_simple_website</a>.</p>
+<br><br>
+
+
+</div>
+
+
+    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
+
+<script>
+  $('.ui.embed').embed();
+</script>
+
+<script src="https://semantic-ui.com/javascript/library/highlight.min.js"></script>
+
+  </body>
+
+</html>
